@@ -1,0 +1,48 @@
+table, th, td {
+    margin: 100px;
+    border: 1px solid black;
+    border-collapse: collapse; 
+ }
+ td, th {
+    padding: 10px;
+ }
+
+ .Click {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #129926;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 250px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-top: 100px;
+  }
+  
+  .Click span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .Click span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .Click:hover span {
+    padding-right: 20px;
+  }
+  
+  .Click:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
